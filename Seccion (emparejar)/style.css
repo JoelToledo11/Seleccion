@@ -1,0 +1,116 @@
+/* Sección de selección */
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+.selection-section {
+    display: flex;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 20px; /* Espacio superior entre secciones */
+  }
+  
+  .phrases {
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 20px;
+    text-align: center;
+  }
+  
+  .phrase {
+    padding: 20px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .phrase.selected {
+    background-color: lightblue;
+  }
+  
+  .images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+  
+  .image-box {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .image-box.selected {
+    background-color: lightcoral;
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  /* Línea vertical separadora */
+  .line-separator {
+    width: 2px;
+    background-color: black;
+    height: 100%;
+    margin: 0 20px;
+  }
+  
+  .result-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  /* MODAL */
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.close {
+    cursor: pointer;
+    float: right;
+    font-size: 24px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Selección</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="selection-section">
+                <div class="phrases">
+                    <div class="phrase" onclick="selectPhrase(this, 'Enojado')">Enojado</div>
+                    <div class="phrase" onclick="selectPhrase(this, 'Feliz')">Feliz</div>
+                    <div class="phrase" onclick="selectPhrase(this, 'Aburrido')">Aburrido</div>
+                    <div class="phrase" onclick="selectPhrase(this, 'Triste')">Triste</div>
+                </div>
+    
+                <div class="line-separator"></div>
+    
+                <div class="images">
+                    <div class="image-box" onclick="selectImage(this, 'Enojado')"><img src="img/enfadar.png" alt="Imagen 1"></div>
+                    <div class="image-box" onclick="selectImage(this, 'Feliz')"><img src="img/alegre (2).png" alt="Imagen 2"></div>
+                    <div class="image-box" onclick="selectImage(this, 'Aburrido')"><img src="img/aburrido (1).png" alt="Imagen 3"></div>
+                    <div class="image-box" onclick="selectImage(this, 'Triste')"><img src="img/triste (1).png" alt="Imagen 4"></div>
+                </div>
+            </div>
+            
+           
+      </section>
+      
+  <!-- Modal -->
+  <div id="resultModal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p id="modalMessage"></p>
+    </div>
+  </div>
+  
+  
+  
+      <script src="java.js"></script>
+  </body>
+  </html>
+  
+  
